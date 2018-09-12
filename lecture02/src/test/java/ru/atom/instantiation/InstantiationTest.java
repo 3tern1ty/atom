@@ -8,7 +8,7 @@ public class InstantiationTest {
     // при выполнении всех тестов в одном запуске
 
     /**
-     *  Порядок инициализации при инстанцировании класса Sub.
+     * Порядок инициализации при инстанцировании класса Sub.
      */
     @Test
     public void testSubClassInstantiation() throws Exception {
@@ -21,5 +21,13 @@ public class InstantiationTest {
     @Test
     public void testBaseClassInstantiation() throws Exception {
         Base base = new Base();
+    }
+
+    /**
+     * Порядок инициализации при инстанцировании класса Sub.
+     */
+    @Test
+    public void testSubSubClassInstantiation() throws Exception {
+        Sub sub = new Sub();
     }
 }
